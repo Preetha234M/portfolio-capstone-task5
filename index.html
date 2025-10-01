@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <h1>Loading...</h1>
+            <div class="spinner-large"></div>
+        </div>
+    </div>
+    <div class="bg-animation"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">&lt;P /&gt;</div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hi, I'm Preetha </h1>
+            <p class="subtitle">
+                <span class="typing-effect" id="typingText"></span>
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="Preetha_Resume.pdf" download class="btn btn-secondary">Download CV</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image">👨‍💻</div>
+            <div class="about-text">
+                <h3>Full Stack Developer & UI/UX Enthusiast</h3>
+                <p>I'm a passionate developer with 5+ years of experience building modern web applications. I specialize in creating responsive, user-friendly interfaces and robust backend systems.</p>
+                <p>My expertise spans across multiple technologies, and I'm constantly learning and adapting to new trends in web development. I believe in writing clean, maintainable code and creating exceptional user experiences.</p>
+                <div class="skills-grid">
+                    <div class="skill-tag">React.js</div>
+                    <div class="skill-tag">Node.js</div>
+                    <div class="skill-tag">JavaScript</div>
+                    <div class="skill-tag">TypeScript</div>
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">MongoDB</div>
+                    <div class="skill-tag">PostgreSQL</div>
+                    <div class="skill-tag">AWS</div>
+                    <div class="skill-tag">Docker</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">🚀</div>
+                <div class="project-info">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A full-featured online shopping platform with real-time inventory management and secure payment processing.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Stripe</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">📱</div>
+                <div class="project-info">
+                    <h3>Task Management App</h3>
+                    <p>Collaborative task management tool with real-time updates, team chat, and productivity analytics.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Vue.js</span>
+                        <span class="tech-badge">Firebase</span>
+                        <span class="tech-badge">Tailwind</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🎨</div>
+                <div class="project-info">
+                    <h3>Design Portfolio CMS</h3>
+                    <p>Custom content management system for designers to showcase their work with drag-and-drop functionality.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Next.js</span>
+                        <span class="tech-badge">Prisma</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">📊</div>
+                <div class="project-info">
+                    <h3>Quiz and joke app</h3>
+                    <p>Real-time data visualization dashboard with customizable widgets and advanced filtering options.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">D3.js</span>
+                        <span class="tech-badge">Python</span>
+                    </div>
+                    <div class="project-links">
+                        <a href=" https://preetha234m.github.io/quiz-joke-app/" class="project-link">Live Demo</a>
+                        <a href="https://github.com/Preetha234M/quiz-joke-app" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🎮</div>
+                <div class="project-info">
+                    <h3>Game Development Platform</h3>
+                    <p>Web-based game engine with built-in physics, collision detection, and multiplayer support.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Three.js</span>
+                        <span class="tech-badge">WebGL</span>
+                        <span class="tech-badge">Socket.io</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🔐</div>
+                <div class="project-info">
+                    <h3>Authentication System</h3>
+                    <p>Secure authentication service with OAuth, 2FA, and JWT token management for enterprise applications.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Redis</span>
+                        <span class="tech-badge">Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2 class="section-title">What I Do</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">💻</div>
+                <h3>Web Development</h3>
+                <p>Building responsive, performant web applications using modern frameworks and best practices.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3>UI/UX Design</h3>
+                <p>Creating intuitive, beautiful interfaces that provide exceptional user experiences.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📱</div>
+                <h3>Mobile Development</h3>
+                <p>Developing cross-platform mobile applications with native performance.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⚙️</div>
+                <h3>Backend Development</h3>
+                <p>Architecting scalable server-side solutions with robust API design.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">☁️</div>
+                <h3>Cloud Solutions</h3>
+                <p>Deploying and managing applications on cloud platforms like AWS and Azure.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔍</div>
+                <h3>SEO Optimization</h3>
+                <p>Improving website visibility and search engine rankings through technical SEO.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/preetha-m-788011363" class="social-link">💼</a>
+                <a href="https://github.com/Preetha234M" class="social-link">🐙</a>
+                <a href="#" class="social-link">🐦</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mpreetha425@gmail.com" class="social-link">📧</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 John Doe. All rights reserved. | Built with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
